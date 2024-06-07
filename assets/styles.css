@@ -1,0 +1,185 @@
+/* Downloaded fonts from Google */
+@font-face {
+  font-family: "Young Serif";
+  src: url(./fonts/YoungSerif-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Headings*/
+
+h1, h2, h3, h4, h5 {
+  font-family: "Young Serif";
+  text-align: center;
+  margin: 15px;
+}
+
+h1 {
+  color:blue;
+}
+h2 {
+  color:dodgerblue;
+}
+
+/*Body*/
+
+body {
+  font-family: "Raleway";
+}
+
+/* div classes */
+
+div.writing {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.center {
+  text-align: center;
+}
+
+div.padding {
+  padding: 10px;
+}
+
+hr {
+  padding: 2px;
+  background-color: blueviolet;
+  margin: 25px;
+}
+
+/* img effects */
+img {
+  border-radius: 25px;
+  opacity: 1;
+  border-style: double;
+  border-width: thick;
+  border-color: blue;
+}
+
+img:hover {
+  opacity: .75;
+  cursor: pointer;
+}
+
+/* column styling */
+* {
+  box-sizing: border-box;
+}
+
+/* column styling - create 3 columns floating next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* column styling - clear floats after columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* column styling - responsive layout */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Video managed in YouTube or Stream */
+video {
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 10px;
+  border-style: double;
+  border-width: thick;
+  border-color: blue;
+}
+
+/* enlarged image */
+#enlarged-image {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 90%;
+  max-height: 90%;
+  opacity: 1;
+}
+
+/* Background image */
+.bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 475px;
+  background: url('images/CuscoStage.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  border-radius: 5px;
+}
+.bg h1 {
+  padding: 20px;
+  background: rgba(250, 235, 215, 0.8); /* antiquewhite with 80% opacity */
+  color: blue;
+  border-radius: 15px; /* Adjust the value to get the desired roundness */
+  margin: 10px;
+}
+.bg h2 {
+  padding: 10px;
+  background: rgba(250, 235, 215, 0.8); /* antiquewhite with 80% opacity */
+  color: blue;
+  border-radius: 15px; /* Adjust the value to get the desired roundness */
+  margin: 10px;
+}
+
+/* drop down menu*/
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-left: 40em;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
