@@ -251,12 +251,14 @@ body {
   align-items: center;
   padding: 10px;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .logo {
   height: auto;
   width: 100px;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .vertical-label {
