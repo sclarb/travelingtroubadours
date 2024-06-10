@@ -154,6 +154,7 @@ iframe {
   background-size: cover;
   text-align: center;
   border-radius: 10px;
+  margin-top: 2em;
 }
 .bgc {
   display: flex;
@@ -179,6 +180,21 @@ iframe {
   color: blue;
   border-radius: 15px; /* Adjust the value to get the desired roundness */
   margin: 10px;
+}
+.image-container {
+  position: relative;
+}
+
+.image-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 /* drop down menu*/
@@ -218,3 +234,41 @@ iframe {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Left column displaying logo */
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.left-column {
+  width: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: auto;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.vertical-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5em;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
