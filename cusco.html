@@ -7,10 +7,35 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/TTMFfav.ico">
     <!-- Load external CSS -->
     <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- Enlarge image script -->
+  <script>
+    function enlargeImage(image) {
+        // Get the enlarged image element
+        var enlargedImage = document.getElementById("enlarged-image");
+
+        // Set the source of the enlarged image to the clicked image
+        enlargedImage.src = image.src;
+
+        // Display the enlarged image
+        enlargedImage.style.display = "block";
+    }
+
+    function closeImage() {
+        // Hide the enlarged image
+        var enlargedImage = document.getElementById("enlarged-image");
+        enlargedImage.style.display = "none";
+    }
+  </script>
+
+    <!-- Close enlarged image -->
+    <img id="enlarged-image" alt="Enlarged Image" onclick="closeImage()">
 </head>
 <body>
     <div class="left-column">
-        <img src="assets/images/favicon/TTMx64.png" alt="TTMF Logo" class="logo">
+        <a href="https://travelingtroubadours.org/">
+            <img src="assets/images/favicon/TTMx64.png" alt="TTMF Logo" class="logo">
+        </a>
         <div class="vertical-label">TTMF</div>
     </div>
     <div class="main-body">
@@ -23,6 +48,7 @@
         <hr>
         <div class="writing">
             <span><a href="index.html">Back to Home Page</a>&nbsp;</span>
+            <span><a href="#turismo">Sightseeing</a>&nbsp;</span>
         </div>
         <div class="row">
             <div class="twocolumn">
@@ -43,7 +69,7 @@
 
         <div class="row">
             <div class="twocolumn center">
-                <img src="assets/images/DressRehearsal.jpg" alt="DressRehearsal" height="315" width="450">
+                <img src="assets/images/DressRehearsal.jpg" alt="DressRehearsal" height="315" width="450" onclick="enlargeImage(this)" class="effect">
                 <figcaption>Dress Rehearsal - Ensayo General</figcaption>
             </div>
             <div class="twocolumn center">
@@ -66,6 +92,52 @@
             <div class="threecolumn center">
                 <iframe width="425" height="315" src="https://www.youtube.com/embed/6ugP37JMYiY?si=MIAhz51fEd_3zaSD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <figcaption>Masterclass in a Monastery - Clase magistral en un monasterio</figcaption>
+            </div>
+        </div>
+        
+        <hr id="turismo">
+        <div class="writing">
+            <h1>Turismo</h1>
+        </div>
+
+        <div class="row">
+            <div class="twocolumn">
+                <div class="writing">
+                    And after the concert, time to go sightseeing and eat in fantastic restaurants! From 15th century Spanish colonial architecture in every town center to mountains, to desert, to jungle, to Incan ruins, Peru is an amazing country.
+                </div>
+            </div>
+            <div class="twocolumn">
+                <div class="writing">
+                    ¡Y después del concierto, tiempo para hacer turismo y comer en fantásticos restaurantes! Desde la arquitectura colonial española del siglo XV en cada centro de la ciudad hasta las montañas, el desierto, la selva y las ruinas incas, Perú es un país increíble.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="threecolumn center">
+                <img src="assets/images/CuscoRestaurant.jpg" alt="Cusco Lunch" height="300" width="325" onclick="enlargeImage(this)" class="effect">
+                <figcaption>Salud!</figcaption>
+            </div>
+            <div class="threecolumn center">
+                <img src="assets/images/PlazadeArmas.jpg" alt="Plaza de Armas" height="300" width="325" onclick="enlargeImage(this)" class="effect">
+                <figcaption>Plaza de Armas</figcaption>
+            </div>
+            <div class="threecolumn center">
+                <iframe width="425" height="305" src="https://www.youtube.com/embed/Ghcd-jDV5V0?si=-cyJ3KDuzvGKe3SU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Machu Picchu</figcaption>
+            </div>
+        </div>
+        <div class="row">
+            <div class="threecolumn center">
+                <img src="assets/images/IncaStone.jpg" alt="Inca Masonry" height="300" width="325" onclick="enlargeImage(this)" class="effect">
+                <figcaption>Inca Masonry</figcaption>
+            </div>
+            <div class="threecolumn center">
+                <img src="assets/images/Cathedral.jpg" alt="Lima Cathedral" height="300" width="325" onclick="enlargeImage(this)" class="effect">
+                <figcaption>Lima Cathedral</figcaption>
+            </div>
+            <div class="threecolumn center">
+                <img src="assets/images/Dunes.jpg" alt="Dunes" height="300" width="325" onclick="enlargeImage(this)" class="effect">
+                <figcaption>Huacachina desert</figcaption>
             </div>
         </div>
     </div>
